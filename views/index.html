@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 
-<body class="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen text-white">
+<body
+    class="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen text-white flex flex-col m-0">
 
     <header
         class="bg-slate-800 border-b-2 border-slate-700 flex justify-between items-center px-[clamp(20px,3vw,50px)] py-[clamp(8px,0.625vw,15px)]">
 
         <div class="flex">
-            <h1 class="text-[clamp(1.25rem,1.25rem+1.25vw,3.5rem)] font-semibold text-orange-500">Book Store</h1>
+            <h1 class="text-[clamp(1.25rem,1.25rem+1vw,3.5rem)] font-semibold text-orange-500">Book Store</h1>
         </div>
 
         <form action="/search" method="get" class="flex items-center relative max-lg:hidden">
             <label for="search" class="sr-only">Search for books</label>
             <input type="text" name="search" id="search" placeholder="What do you want to Read?"
-                class="border-2 border-slate-600 pl-[4.2%] pr-[12.5%] py-[2.5%] w-[clamp(280px,25vw,900px)] rounded-full bg-slate-700 text-[clamp(0.9375rem,0.5rem+0.625vw,2rem)] outline-0 focus-visible:outline-2 focus-visible:outline-orange-500">
+                class="border-2 border-slate-600 pl-[4.2%] pr-[12.5%] py-[2.25%] w-[clamp(280px,25vw,900px)] rounded-full bg-slate-700 text-[clamp(0.9375rem,0.5rem+0.625vw,2rem)] outline-0 focus-visible:outline-2 focus-visible:outline-orange-500">
             <button type="submit"
                 class="absolute top-[50%] -translate-y-[50%] right-[calc(3.125vw/2-1.25vw/4)] max-lg:right-3.25">
                 <img src="/assets/images/search.svg" alt="" aria-hidden="true" class="h-[clamp(16px,1.25vw,28px)]">
@@ -36,7 +37,7 @@
                 <li><a href="/upload"
                         class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">Upload</a></li>
                 <li><button
-                        class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] bg-orange-600 hover:bg-orange-700 px-[0.964em] py-[0.4em] font-medium rounded-sm cursor-pointer">Login</button>
+                        class="loginBtn text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] bg-orange-600 hover:bg-orange-700 px-[0.964em] py-[0.4em] font-medium rounded-sm cursor-pointer">Login</button>
                 </li>
             </ul>
         </nav>
@@ -78,7 +79,7 @@
                             class="text-[clamp(0.875rem,0.9375rem+0.3vw,1.5rem)] hover:text-orange-500">Upload</a></li>
                     <li>
                         <button
-                            class="w-full text-[clamp(0.875rem,0.9375rem+0.5vw,1.5rem)] bg-orange-600 hover:bg-orange-700 px-[0.964em] py-[0.4em] font-medium rounded-md cursor-pointer">
+                            class="loginBtn w-full text-[clamp(0.875rem,0.9375rem+0.5vw,1.5rem)] bg-orange-600 hover:bg-orange-700 px-[0.964em] py-[0.4em] font-medium rounded-md cursor-pointer">
                             Login
                         </button>
                     </li>
@@ -88,8 +89,23 @@
         </div>
     </div>
 
+    <main class="grow">
+        <section id="home" class="max-w-7xl mx-auto px-4 py-12 text-center">
+            <h2
+                class="text-5xl font-bold mb-4 bg-linear-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+                Discover Your Next Favorite Book
+            </h2>
+            <p class="text-xl text-slate-400 mb-8">
+                Explore thousands of books curated just for you
+            </p>
+        </section>
+    </main>
 
-    <script src="/js/menu.js"></script>
+    <footer class="border-t border-slate-700 mt-16 py-8 text-center text-slate-500">
+        <p>&copy; 2025 BookStore. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/header.js"></script>
 
 </body>
 
